@@ -1,0 +1,10 @@
+.bu_collapsible:after {
+  position: relative;
+  left: 10px;
+  top: 1em;
+}
+
+.bu_collapsible_open .bu_collapsible:after {
+  margin-top: 0;
+  top: -0.75em;
+}

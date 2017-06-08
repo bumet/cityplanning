@@ -1,0 +1,137 @@
+/* News Template
+  ---------------------------------------- */
+.page-template-news:not(.paged) .thumb {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+.page-template-news .content-container {
+  max-width: $LG;
+  margin: auto;
+}
+.page-template-news .news-posts .post,
+.page-template-news .archive .content-container article {
+  overflow: hidden;
+}
+.page-template-news .news-posts h2,
+.page-template-news .news-posts h2 a {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.page-template-news .news-posts {
+  margin-top: 0;
+}
+.page-template-news article[role="main"] {
+  @extend %col-md-8;
+}
+.page-template-news .sidebarPosts {
+  @extend %col-md-4;
+  clear: none;
+	position: relative;
+  @include breakpoint($MD) {
+    padding: 0 0 0 3.46667%;
+  }
+}
+.page-template-news .sidebarPosts .widget {
+  @include breakpoint($SM) {
+    width: auto;
+    float: none;
+  }
+}
+.page-template-news article[role="main"] .nav-links a {
+	color: white;
+  border: none;
+}
+
+/* Single Post Template
+  ---------------------------------------- */
+.single-post article[role="main"] .meta {
+	display: none;
+}
+
+/* Calendar Template
+  ---------------------------------------- */
+.page-template-calendar .event-list #events .event-date {
+  margin-bottom: 0;
+}
+.page-template-calendar .event-list #events a:hover {
+  color: $bu-red;
+}
+.page-template-calendar .event-list #events li {
+  display: table;
+}
+.page-template-calendar .event-list #events li span {
+  display: table-cell;
+  font-family: 'Lato', $benton-sans;
+}
+.page-template-calendar .event-list #events li span.event-title {
+  min-width: 75px;
+}
+
+.page-template-calendar .sidebarCalendar .widget:first-of-type .widgetTitle {
+  display: none;
+}
+
+.home .bannerContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Alumni Profile Pages
+  ---------------------------------------- */
+.parent-pageid-37 article[role="main"] > h1 {
+	text-align: center;
+}
+
+
+.post-37 .bu-list-child-pages, .post-1793 .bu-list-child-pages, .post-25 .bu-list-child-pages {
+  text-align: center;
+  @include breakpoint(480px) {
+    text-align: left;
+  }
+}
+.post-37 .bu-list-child-pages div, .post-1793 .bu-list-child-pages div, .post-25 .bu-list-child-pages div {
+  border-bottom: 1px dotted darkgray;
+  clear: both;
+  overflow: hidden;
+  padding: 25px 15px;
+  position: relative;
+}
+.post-37 .bu-list-child-pages div:hover, .post-1793 .bu-list-child-pages div:hover, .post-25 .bu-list-child-pages div:hover {
+  transition: 0.5s background-color ease;
+  background-color: #f5f7fa;
+}
+.post-37 .bu-list-child-pages div:first-of-type, .post-1793 .bu-list-child-pages div:first-of-type, .post-25 .bu-list-child-pages div:first-of-type {
+  border-top: 1px dotted darkgray;
+}
+.post-37 .bu-list-child-pages img, .post-1793 .bu-list-child-pages img, .post-25 .bu-list-child-pages img {
+  float: none;
+  margin-left: 10px;
+  margin: 10px auto;
+  @include breakpoint(480px) {
+    margin-top: 0;
+    margin-bottom: 0;
+    float: right;
+  }
+}
+.post-37 .bu-list-child-pages p, .post-1793 .bu-list-child-pages p, .post-25 .bu-list-child-pages p {
+  text-align: left;
+}
+.post-37 .bu-list-child-pages h3, .post-1793 .bu-list-child-pages h3, .post-25 .bu-list-child-pages h3 {
+  line-height: initial;
+  margin-bottom: 0;
+  height: 1.17em;
+  float: left;
+  @include breakpoint(480px) {
+    float: none;
+  }
+}
+.post-37 .bu-list-child-pages a, .post-1793 .bu-list-child-pages a, .post-25 .bu-list-child-pages a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-bottom: 0;
+  cursor: pointer;
+  margin: -25px -15px;
+  padding: 10px;
+}

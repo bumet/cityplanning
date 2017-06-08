@@ -1,0 +1,93 @@
+/* Content Area
+ ------------------------------------------------------------ */
+.content {
+  position: relative;
+}
+
+/* Header
+ ------------------------------------------------------------ */
+.masthead {
+  border: none;
+}
+
+/* Banner
+ ------------------------------------------------------------ */
+.bannerContainer {
+  padding: 0;
+}
+.bannerContainer img {
+  max-width: $LG;
+}
+.bannerContainer video {
+  display: block;
+	margin: auto;
+  outline: 0;
+  width: 100%;
+}
+
+/* Quicksearch form
+ ------------------------------------------------------------ */
+#quicksearch .search-submit {
+	font-size: 1rem;
+  border: 1px solid #0078e7;
+}
+#q {
+  outline: 0;
+}
+
+/* Primarynav
+ ------------------------------------------------------------ */
+.primaryNav-menu ul {
+	@include breakpoint($SM) {
+		display: none;
+	}
+}
+
+.primaryNav.is-open {
+  @include breakpoint($MD) {
+    padding-bottom: 20px;
+  }
+}
+
+/* Footer
+ ------------------------------------------------------------ */
+.siteFooter .siteFooter-content {
+  margin-left: 0!important;
+}
+.siteFooter .brand-sponsored {
+  background-image: none !important;
+  padding-left: 0 !important;
+}
+.siteFooter .siteFooter-links {
+  width: auto !important;
+  padding-left: 0 !important;
+
+  @include breakpoint($MD) {
+    text-align: center;
+    margin: auto;
+  }
+}
+.siteFooter .siteFooter-social {
+  width: auto !important;
+  @include breakpoint($MD) {
+    text-align: center;
+    display: block;
+  }
+}
+.siteFooter .siteFooter-social .siteFooter-social-menu {
+  display: inline-block;
+  min-width: 200px;
+}
+.siteFooter .siteFooter-social a {
+  color: white;
+  display: inline-block;
+  background-color: $bu-red;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+.siteFooter .siteFooter-social i {
+  font-size: 1rem;
+}

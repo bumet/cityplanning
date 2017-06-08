@@ -1,0 +1,20 @@
+article[role="main"] .more {
+	border: 2px solid rgba(0,0,0,0.25);
+	color: rgba(0,0,0,0.25);
+	float: right;
+	font-weight: bold;
+	margin-top: 1rem;
+	padding: 0.25rem 0.75rem;
+	text-decoration: none;
+}
+
+article[role="main"] .more:visited {
+	color: rgba(0,0,0,0.25);
+}
+
+article[role="main"] .more:hover {
+	background-color: rgba(0,0,0,0.25);
+	border: 2px solid rgba(0,0,0,0.25);
+	color: white;
+	transition: background-color 0.5s ease;
+}

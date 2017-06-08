@@ -1,0 +1,288 @@
+.newsletters {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 0!important;
+}
+.newsletters a {
+  color: #555;
+  text-decoration: none;
+  display: block;
+}
+.newsletter a:hover {
+  color: lightgray;
+}
+
+.widget_bu_pages .widgetTitle {
+  margin-bottom: 5px;
+  color: $bu-red;
+  font-size: 1.25em;
+}
+.widget_bu_pages .widgetTitle a {
+  color: $bu-red;
+  font-size: inherit;
+}
+.widget_bu_pages .widgetTitle a:after {
+  content: none;
+}
+.widget_bu_pages ul a {
+  text-decoration: none;
+}
+
+.social-media-box {
+  width: 100%;
+  text-align: center;
+}
+.social-media-box ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.social-media-box li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.social-media-box a {
+  color: white;
+}
+.social-media-box a:visited {
+  color: white!important;
+}
+.social-media-box .boxed-icon {
+  background-color: $bu-red;
+  border-radius: 50%;
+  color: white!important;
+  display: block;
+  height: 50px;
+  text-decoration: none;
+  width: 50px;
+}
+.social-media-box .boxed-icon:hover {
+  background-color: #B00;
+}
+.social-media-box .boxed-icon span {
+  font-family: $bu-default-icons;
+  font-size: 20px;
+  position: relative;
+  top: 11px;
+}
+.social-media-box #instagram span:before {
+  @extend %icon-instagram;
+}
+.social-media-box #linkedin span:before {
+  @extend %icon-linkedin;
+}
+.social-media-box #twitter span:before {
+  @extend %icon-twitter;
+}
+.social-media-box #facebook span:before {
+  @extend %icon-facebook;
+}
+
+.widgetTitle {
+  border-bottom-width: 2px;
+	border-bottom-color: rgba(0,0,0,0.85);
+}
+.widgetTitle a {
+	color: black;
+	font-family: 'Lato', $benton-sans;
+	font-size: 1.5rem;
+  font-weight: normal;
+}
+.widgetTitle a:active, .widgetTitle a:focus {
+	color: black;
+}
+.widgetTitle a:after {
+	content: '';
+}
+.widgetTitle a:hover {
+	color: #2baadf;
+}
+
+#contentnavlist li a {
+  color: #555;
+  background: transparent url("https://www.bu.edu/met/wp-content/themes/flexi-met/images/sprite.png") no-repeat 100% -282px;
+}
+#contentnavlist li .active {
+  color: $bu-red;
+}
+#contentnavlist li a:hover {
+  color: #222;
+}
+#contentnavlist li a:not(.active):hover {
+  color: lightgray;
+}
+
+#text-10 .widgetTitle {
+	display: none;
+}
+
+.post .headline, .post .headline a {
+	font-size: 14px !important;
+	font-weight: normal;
+	text-decoration: none;
+	color: #2baadf;
+}
+.post .headline, .post .headline a:hover {
+	color: $bu-red;
+}
+
+.widget-bu-posts .post {
+	border-bottom: 1px solid lightgray;
+	padding: 0;
+	margin-bottom: 0;
+}
+.widget-bu-posts .post a {
+  padding: 15px 0;
+  display: block;
+}
+
+/* Events Calendar Widget
+ ------------------------------------ */
+.monthCalendar {
+	border-bottom-left-radius: 0.3125rem;
+	border-bottom-right-radius: 0.3125rem;
+	border-collapse: initial;
+}
+.monthCalendar thead {
+	background: transparent;
+}
+.monthCalendar thead tr th {
+	background: transparent;
+	color: rgba(0,0,0,0.84);
+	border: none;
+}
+.monthCalendar caption {
+	background-color: lightsteelblue;
+	color: white;
+	border-top-left-radius: 0.3125rem;
+	border-top-right-radius: 0.3125rem;
+	font-family: 'Lato', $benton-sans;
+	font-size: 1.25rem;
+}
+.monthCalendar td {
+	border: none;
+}
+.monthCalendar td.selected .day {
+	background-color: lightsteelblue;
+}
+.monthCalendar .selected .day a {
+	color: white;
+}
+.monthCalendar td.today {
+	background: transparent;
+}
+.monthCalendar td.today .day {
+	background-color: $bu-red;
+}
+.monthCalendar td.today .day a {
+	color: white;
+}
+.monthCalendar td.out {
+	background: transparent;
+}
+.monthCalendar td.out .day a {
+  color: lightgray;
+}
+.monthCalendar td.busy .day a {
+	background: transparent url("/cityplanning/files/2016/04/cal_bullet.png") no-repeat center bottom;
+}
+.monthCalendar .day {
+	height: 42px;
+	width: 42px;
+	line-height: 42px;
+	background: transparent;
+	border-radius: 50%;
+	position: relative;
+}
+.monthCalendar .day a {
+	border-radius: 50%;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	color: $bu-red;
+	font-family: 'Lato', $benton-sans;
+}
+.monthCalendar caption a {
+	color: white;
+	padding: 0 0.25em;
+	text-decoration: none;
+	font-size: 1.25em;
+}
+.monthCalendar caption a:hover, .monthCalendar caption a:active, .monthCalendar caption a:focus {
+	color: white;
+}
+
+.widget.events {
+	background-color: lighten(#2baadf, 33%);
+	max-width: 337.484px;
+}
+.widget.events .header {
+	background-color: #2baadf;
+	overflow: auto;
+}
+.widget.events .header h2 {
+	color: white;
+	margin-bottom: 0.25em;
+	font-size: 18px;
+	line-height: 1.6;
+  font-family: $benton-sans;
+  font-weight: 500;
+	display: inline;
+}
+.widget.events .header .icon {
+	font-style: normal;
+	font-family: $bu-default-icons;
+	text-align: center;
+	color: #2baadf;
+	background-color: white;
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+	margin: 10px;
+  line-height: 40px;
+	font-size: 21px;
+	vertical-align: sub;
+}
+.widget.events .event {
+	border-bottom: 1px dotted #2baadf;
+}
+.widget.events .event a {
+	padding: 0.5em 1em;
+	border-bottom: none;
+	color: #444;
+	display: block;
+	position: relative;
+	font-size: 0.8em;
+	text-decoration: none;
+}
+.widget.events .event a span {
+	font-size: 1em;
+}
+.widget.events .event a:visited, .widget.events .event a:hover, .widget.events .event a:focus, .widget.events .event a:active {
+	color: #444;
+}
+.widget.events .event a:hover {
+	background-color: transparentize(black, 0.95);
+}
+.widget.events .event a:after {
+	@extend %icon-navigateright;
+	font-family: $bu-default-icons;
+	position: absolute;
+	right: 1em;
+	top: 0;
+	bottom: 0;
+  vertical-align: middle;
+	margin: auto;
+	display: block;
+	height: 26px;
+	background: #2baadf;
+	color: white;
+	width: 26px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 24px;
+}

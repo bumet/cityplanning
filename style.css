@@ -1,0 +1,660 @@
+/*
+  Theme Name: City Planning
+  Theme URI: https://www.bu.edu/cityplanning/
+  Description: BU City Planning site redesign/site migration to Wordpress
+  Author: Boston University Metropolitan College
+  Version: 1.0.0
+  Tags: City Planning, Responsive, Mobile-first, Modular, Sass
+*/
+@import url("https://fonts.googleapis.com/css?family=Lato:400,100,300");
+@font-face {
+  font-family: "BU-Default-Icons";
+  src: url("http://www.bu.edu/cdn/fonts/icons/bu-default-icons/bu-default-icons.eot?#iefix") format("embedded-opentype"), url("http://www.bu.edu/cdn/fonts/icons/bu-default-icons/bu-default-icons.woff") format("woff"), url("http://www.bu.edu/cdn/fonts/icons/bu-default-icons/bu-default-icons.ttf") format("truetype"), url("http://www.bu.edu/cdn/fonts/icons/bu-default-icons/bu-default-icons.svg#bu-default-icons") format("svg");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "Benton-Sans";
+  src: url("https://www.bu.edu/cdn/fonts/Benton-Sans-Medium/8e221891-e89b-4eae-95ca-6346d9a41d20-2.eot");
+  src: url("https://www.bu.edu/cdn/fonts/Benton-Sans-Medium/8e221891-e89b-4eae-95ca-6346d9a41d20-2.eot?") format("embedded-opentype"), url("https://www.bu.edu/cdn/fonts/Benton-Sans-Medium/8e221891-e89b-4eae-95ca-6346d9a41d20-3.woff") format("woff"), url("https://www.bu.edu/cdn/fonts/Benton-Sans-Medium/8e221891-e89b-4eae-95ca-6346d9a41d20-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500; }
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.17em; }
+
+h4 {
+  font-size: 1.12em; }
+
+h5 {
+  font-size: .83em; }
+
+h6 {
+  font-size: .75em; }
+
+aside h2 {
+  font-size: 24px; }
+
+aside h3 {
+  font-size: 20px; }
+
+p, li, a, span {
+  font-size: 15px; }
+
+p, li {
+  line-height: 1.67em; }
+
+h1, h2, h3 {
+  font-family: "Lato", sans-serif; }
+
+blockquote {
+  display: block;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+  border-left: 7px solid #DADEEE; }
+
+blockquote::before {
+  content: "\201C";
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  position: absolute;
+  left: 10px;
+  top: -20px; }
+
+blockquote::after {
+  content: ""; }
+
+article[role="main"] a {
+  color: #C00;
+  border-bottom: 1px dotted #C00;
+  text-decoration: none; }
+
+article[role="main"] a:hover {
+  border-bottom: none; }
+
+article[role="main"] a:visited {
+  color: #C00; }
+
+article[role="main"] a:focus {
+  outline: 0; }
+
+@media screen and (min-width: 992px) {
+  .page-template-news .sidebarPosts {
+    float: left;
+    width: 33.33333%; } }
+
+@media screen and (min-width: 992px) {
+  .page-template-news article[role="main"] {
+    float: left;
+    width: 66.66667%; } }
+
+@font-face {
+  font-family: "BU-Default-Icons";
+  src: url("https://www.bu.edu/cdn/fonts/icons/bu-default-icons/bu-default-icons.eot");
+  src: url("https://www.bu.edu/cdn/fonts/icons/bu-default-icons/bu-default-icons.eot?#iefix") format("embedded-opentype"), url("https://www.bu.edu/cdn/fonts/icons/bu-default-icons/bu-default-icons.woff") format("woff"), url("https://www.bu.edu/cdn/fonts/icons/bu-default-icons/bu-default-icons.ttf") format("truetype"), url("https://www.bu.edu/cdn/fonts/icons/bu-default-icons/bu-default-icons.svg#bu-default-icons") format("svg");
+  font-style: normal;
+  font-weight: 400; }
+/* Actions */
+/* Arrows */
+.widget.events .event a:after {
+  content: "\25BB"; }
+
+/* Charts, Graphs, & Data */
+/* Communication */
+/* Documents */
+/* eCommerce */
+/* Editing */
+/* Location */
+/* Media */
+/* Objects */
+/* Social Media */
+.social-media-box #facebook span:before {
+  content: "\F610"; }
+
+.social-media-box #instagram span:before {
+  content: "\F641"; }
+
+.social-media-box #linkedin span:before {
+  content: "\F612"; }
+
+.social-media-box #twitter span:before {
+  content: "\F611"; }
+
+/* Status */
+/* Technology */
+/* Time & Date */
+/* Transportation */
+.gform_wrapper input[type="radio"] {
+  margin-left: 0.1em !important; }
+
+@media screen and (min-width: 768px) {
+  .brand:after {
+    background: url("https://www.bu.edu/cdn/images/logos/masterplate112x50.png") no-repeat 0 0;
+    content: "Boston University";
+    display: block;
+    float: right;
+    height: 50px;
+    margin: 35px;
+    text-indent: -9999em;
+    width: 112px; } }
+
+.brand span {
+  font-size: 1rem; }
+
+@media screen and (min-width: 768px) {
+  .brand-masterplate {
+    display: none; } }
+
+.newsletters {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 0 !important; }
+
+.newsletters a {
+  color: #555;
+  text-decoration: none;
+  display: block; }
+
+.newsletter a:hover {
+  color: lightgray; }
+
+.widget_bu_pages .widgetTitle {
+  margin-bottom: 5px;
+  color: #C00;
+  font-size: 1.25em; }
+
+.widget_bu_pages .widgetTitle a {
+  color: #C00;
+  font-size: inherit; }
+
+.widget_bu_pages .widgetTitle a:after {
+  content: none; }
+
+.widget_bu_pages ul a {
+  text-decoration: none; }
+
+.social-media-box {
+  width: 100%;
+  text-align: center; }
+
+.social-media-box ul {
+  list-style-type: none;
+  padding-left: 0; }
+
+.social-media-box li {
+  display: inline-block;
+  margin: 0 10px; }
+
+.social-media-box a {
+  color: white; }
+
+.social-media-box a:visited {
+  color: white !important; }
+
+.social-media-box .boxed-icon {
+  background-color: #C00;
+  border-radius: 50%;
+  color: white !important;
+  display: block;
+  height: 50px;
+  text-decoration: none;
+  width: 50px; }
+
+.social-media-box .boxed-icon:hover {
+  background-color: #B00; }
+
+.social-media-box .boxed-icon span {
+  font-family: "BU-Default-Icons", "Benton-Sans", "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 20px;
+  position: relative;
+  top: 11px; }
+
+.widgetTitle {
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(0, 0, 0, 0.85); }
+
+.widgetTitle a {
+  color: black;
+  font-family: "Lato", "Benton-Sans", "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal; }
+
+.widgetTitle a:active, .widgetTitle a:focus {
+  color: black; }
+
+.widgetTitle a:after {
+  content: ''; }
+
+.widgetTitle a:hover {
+  color: #2baadf; }
+
+#contentnavlist li a {
+  color: #555;
+  background: transparent url("https://www.bu.edu/met/wp-content/themes/flexi-met/images/sprite.png") no-repeat 100% -282px; }
+
+#contentnavlist li .active {
+  color: #C00; }
+
+#contentnavlist li a:hover {
+  color: #222; }
+
+#contentnavlist li a:not(.active):hover {
+  color: lightgray; }
+
+#text-10 .widgetTitle {
+  display: none; }
+
+.post .headline, .post .headline a {
+  font-size: 14px !important;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2baadf; }
+
+.post .headline, .post .headline a:hover {
+  color: #C00; }
+
+.widget-bu-posts .post {
+  border-bottom: 1px solid lightgray;
+  padding: 0;
+  margin-bottom: 0; }
+
+.widget-bu-posts .post a {
+  padding: 15px 0;
+  display: block; }
+
+/* Events Calendar Widget
+ ------------------------------------ */
+.monthCalendar {
+  border-bottom-left-radius: 0.3125rem;
+  border-bottom-right-radius: 0.3125rem;
+  border-collapse: initial; }
+
+.monthCalendar thead {
+  background: transparent; }
+
+.monthCalendar thead tr th {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.84);
+  border: none; }
+
+.monthCalendar caption {
+  background-color: lightsteelblue;
+  color: white;
+  border-top-left-radius: 0.3125rem;
+  border-top-right-radius: 0.3125rem;
+  font-family: "Lato", "Benton-Sans", "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 1.25rem; }
+
+.monthCalendar td {
+  border: none; }
+
+.monthCalendar td.selected .day {
+  background-color: lightsteelblue; }
+
+.monthCalendar .selected .day a {
+  color: white; }
+
+.monthCalendar td.today {
+  background: transparent; }
+
+.monthCalendar td.today .day {
+  background-color: #C00; }
+
+.monthCalendar td.today .day a {
+  color: white; }
+
+.monthCalendar td.out {
+  background: transparent; }
+
+.monthCalendar td.out .day a {
+  color: lightgray; }
+
+.monthCalendar td.busy .day a {
+  background: transparent url("/cityplanning/files/2016/04/cal_bullet.png") no-repeat center bottom; }
+
+.monthCalendar .day {
+  height: 42px;
+  width: 42px;
+  line-height: 42px;
+  background: transparent;
+  border-radius: 50%;
+  position: relative; }
+
+.monthCalendar .day a {
+  border-radius: 50%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #C00;
+  font-family: "Lato", "Benton-Sans", "Helvetica Neue", "Helvetica", sans-serif; }
+
+.monthCalendar caption a {
+  color: white;
+  padding: 0 0.25em;
+  text-decoration: none;
+  font-size: 1.25em; }
+
+.monthCalendar caption a:hover, .monthCalendar caption a:active, .monthCalendar caption a:focus {
+  color: white; }
+
+.widget.events {
+  background-color: #bde5f5;
+  max-width: 337.484px; }
+
+.widget.events .header {
+  background-color: #2baadf;
+  overflow: auto; }
+
+.widget.events .header h2 {
+  color: white;
+  margin-bottom: 0.25em;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Benton-Sans", "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 500;
+  display: inline; }
+
+.widget.events .header .icon {
+  font-style: normal;
+  font-family: "BU-Default-Icons", "Benton-Sans", "Helvetica Neue", "Helvetica", sans-serif;
+  text-align: center;
+  color: #2baadf;
+  background-color: white;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  margin: 10px;
+  line-height: 40px;
+  font-size: 21px;
+  vertical-align: sub; }
+
+.widget.events .event {
+  border-bottom: 1px dotted #2baadf; }
+
+.widget.events .event a {
+  padding: 0.5em 1em;
+  border-bottom: none;
+  color: #444;
+  display: block;
+  position: relative;
+  font-size: 0.8em;
+  text-decoration: none; }
+
+.widget.events .event a span {
+  font-size: 1em; }
+
+.widget.events .event a:visited, .widget.events .event a:hover, .widget.events .event a:focus, .widget.events .event a:active {
+  color: #444; }
+
+.widget.events .event a:hover {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+.widget.events .event a:after {
+  font-family: "BU-Default-Icons", "Benton-Sans", "Helvetica Neue", "Helvetica", sans-serif;
+  position: absolute;
+  right: 1em;
+  top: 0;
+  bottom: 0;
+  vertical-align: middle;
+  margin: auto;
+  display: block;
+  height: 26px;
+  background: #2baadf;
+  color: white;
+  width: 26px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px; }
+
+article[role="main"] .more {
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.25);
+  float: right;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding: 0.25rem 0.75rem;
+  text-decoration: none; }
+
+article[role="main"] .more:visited {
+  color: rgba(0, 0, 0, 0.25); }
+
+article[role="main"] .more:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  color: white;
+  transition: background-color 0.5s ease; }
+
+/* News Template
+  ---------------------------------------- */
+.page-template-news:not(.paged) .thumb {
+  float: left;
+  margin: 0 15px 15px 0; }
+
+.page-template-news .content-container {
+  max-width: 1170px;
+  margin: auto; }
+
+.page-template-news .news-posts .post,
+.page-template-news .archive .content-container article {
+  overflow: hidden; }
+
+.page-template-news .news-posts h2,
+.page-template-news .news-posts h2 a {
+  font-size: 20px;
+  line-height: 1.6; }
+
+.page-template-news .news-posts {
+  margin-top: 0; }
+
+.page-template-news .sidebarPosts {
+  clear: none;
+  position: relative; }
+  @media screen and (min-width: 992px) {
+    .page-template-news .sidebarPosts {
+      padding: 0 0 0 3.46667%; } }
+
+@media screen and (min-width: 768px) {
+  .page-template-news .sidebarPosts .widget {
+    width: auto;
+    float: none; } }
+
+.page-template-news article[role="main"] .nav-links a {
+  color: white;
+  border: none; }
+
+/* Single Post Template
+  ---------------------------------------- */
+.single-post article[role="main"] .meta {
+  display: none; }
+
+/* Calendar Template
+  ---------------------------------------- */
+.page-template-calendar .event-list #events .event-date {
+  margin-bottom: 0; }
+
+.page-template-calendar .event-list #events a:hover {
+  color: #C00; }
+
+.page-template-calendar .event-list #events li {
+  display: table; }
+
+.page-template-calendar .event-list #events li span {
+  display: table-cell;
+  font-family: "Lato", "Benton-Sans", "Helvetica Neue", "Helvetica", sans-serif; }
+
+.page-template-calendar .event-list #events li span.event-title {
+  min-width: 75px; }
+
+.page-template-calendar .sidebarCalendar .widget:first-of-type .widgetTitle {
+  display: none; }
+
+.home .bannerContainer {
+  overflow: hidden;
+  position: relative; }
+
+/* Alumni Profile Pages
+  ---------------------------------------- */
+.parent-pageid-37 article[role="main"] > h1 {
+  text-align: center; }
+
+.post-37 .bu-list-child-pages, .post-1793 .bu-list-child-pages, .post-25 .bu-list-child-pages {
+  text-align: center; }
+  @media screen and (min-width: 480px) {
+    .post-37 .bu-list-child-pages, .post-1793 .bu-list-child-pages, .post-25 .bu-list-child-pages {
+      text-align: left; } }
+
+.post-37 .bu-list-child-pages div, .post-1793 .bu-list-child-pages div, .post-25 .bu-list-child-pages div {
+  border-bottom: 1px dotted darkgray;
+  clear: both;
+  overflow: hidden;
+  padding: 25px 15px;
+  position: relative; }
+
+.post-37 .bu-list-child-pages div:hover, .post-1793 .bu-list-child-pages div:hover, .post-25 .bu-list-child-pages div:hover {
+  transition: 0.5s background-color ease;
+  background-color: #f5f7fa; }
+
+.post-37 .bu-list-child-pages div:first-of-type, .post-1793 .bu-list-child-pages div:first-of-type, .post-25 .bu-list-child-pages div:first-of-type {
+  border-top: 1px dotted darkgray; }
+
+.post-37 .bu-list-child-pages img, .post-1793 .bu-list-child-pages img, .post-25 .bu-list-child-pages img {
+  float: none;
+  margin-left: 10px;
+  margin: 10px auto; }
+  @media screen and (min-width: 480px) {
+    .post-37 .bu-list-child-pages img, .post-1793 .bu-list-child-pages img, .post-25 .bu-list-child-pages img {
+      margin-top: 0;
+      margin-bottom: 0;
+      float: right; } }
+
+.post-37 .bu-list-child-pages p, .post-1793 .bu-list-child-pages p, .post-25 .bu-list-child-pages p {
+  text-align: left; }
+
+.post-37 .bu-list-child-pages h3, .post-1793 .bu-list-child-pages h3, .post-25 .bu-list-child-pages h3 {
+  line-height: initial;
+  margin-bottom: 0;
+  height: 1.17em;
+  float: left; }
+  @media screen and (min-width: 480px) {
+    .post-37 .bu-list-child-pages h3, .post-1793 .bu-list-child-pages h3, .post-25 .bu-list-child-pages h3 {
+      float: none; } }
+
+.post-37 .bu-list-child-pages a, .post-1793 .bu-list-child-pages a, .post-25 .bu-list-child-pages a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-bottom: 0;
+  cursor: pointer;
+  margin: -25px -15px;
+  padding: 10px; }
+
+.bu_collapsible:after {
+  position: relative;
+  left: 10px;
+  top: 1em; }
+
+.bu_collapsible_open .bu_collapsible:after {
+  margin-top: 0;
+  top: -0.75em; }
+
+/* Content Area
+ ------------------------------------------------------------ */
+.content {
+  position: relative; }
+
+/* Header
+ ------------------------------------------------------------ */
+.masthead {
+  border: none; }
+
+/* Banner
+ ------------------------------------------------------------ */
+.bannerContainer {
+  padding: 0; }
+
+.bannerContainer img {
+  max-width: 1170px; }
+
+.bannerContainer video {
+  display: block;
+  margin: auto;
+  outline: 0;
+  width: 100%; }
+
+/* Quicksearch form
+ ------------------------------------------------------------ */
+#quicksearch .search-submit {
+  font-size: 1rem;
+  border: 1px solid #0078e7; }
+
+#q {
+  outline: 0; }
+
+/* Primarynav
+ ------------------------------------------------------------ */
+@media screen and (min-width: 768px) {
+  .primaryNav-menu ul {
+    display: none; } }
+
+@media screen and (min-width: 992px) {
+  .primaryNav.is-open {
+    padding-bottom: 20px; } }
+
+/* Footer
+ ------------------------------------------------------------ */
+.siteFooter .siteFooter-content {
+  margin-left: 0 !important; }
+
+.siteFooter .brand-sponsored {
+  background-image: none !important;
+  padding-left: 0 !important; }
+
+.siteFooter .siteFooter-links {
+  width: auto !important;
+  padding-left: 0 !important; }
+  @media screen and (min-width: 992px) {
+    .siteFooter .siteFooter-links {
+      text-align: center;
+      margin: auto; } }
+
+.siteFooter .siteFooter-social {
+  width: auto !important; }
+  @media screen and (min-width: 992px) {
+    .siteFooter .siteFooter-social {
+      text-align: center;
+      display: block; } }
+
+.siteFooter .siteFooter-social .siteFooter-social-menu {
+  display: inline-block;
+  min-width: 200px; }
+
+.siteFooter .siteFooter-social a {
+  color: white;
+  display: inline-block;
+  background-color: #C00;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  text-align: center; }
+
+.siteFooter .siteFooter-social i {
+  font-size: 1rem; }
+
+/*# sourceMappingURL=style.css.map */

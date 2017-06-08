@@ -1,0 +1,81 @@
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1.12em;
+}
+
+h5 {
+  font-size: .83em;
+}
+
+h6 {
+  font-size: .75em;
+}
+
+aside h2 {
+  font-size: 24px;
+}
+
+aside h3 {
+  font-size: 20px;
+}
+
+p, li, a, span {
+  font-size: 15px;
+}
+
+p, li {
+  line-height: 1.67em;
+}
+
+h1, h2, h3 {
+	font-family: "Lato", sans-serif;
+}
+
+blockquote {
+  display: block;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+  border-left: 7px solid #DADEEE;
+}
+blockquote::before {
+  content: "\201C";
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  position: absolute;
+  left: 10px;
+  top: -20px;
+}
+blockquote::after {
+  content: "";
+}
+article[role="main"] a {
+  color: $bu-red;
+  border-bottom: 1px dotted $bu-red;
+  text-decoration: none;
+}
+article[role="main"] a:hover {
+  border-bottom: none;
+}
+article[role="main"] a:visited {
+  color: $bu-red;
+}
+article[role="main"] a:focus {
+	outline: 0;
+}

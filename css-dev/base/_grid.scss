@@ -1,0 +1,42 @@
+$columns: 12;
+@mixin col-x-list {
+  @for $i from 1 through $columns {
+    %col-#{$i} {
+      float: left;
+      width: percentage($i / $columns);
+    }
+  }
+  @for $i from 1 through $columns {
+    %col-xs-#{$i} {
+      @include breakpoint($XS) {
+        float: left;
+        width: percentage($i / $columns);
+      }
+    }
+  }
+  @for $i from 1 through $columns {
+    %col-sm-#{$i} {
+      @include breakpoint($SM) {
+        float: left;
+        width: percentage($i / $columns);
+      }
+    }
+  }
+  @for $i from 1 through $columns {
+    %col-md-#{$i} {
+      @include breakpoint($MD) {
+        float: left;
+        width: percentage($i / $columns);
+      }
+    }
+  }
+  @for $i from 1 through $columns {
+    %col-lg-#{$i} {
+      @include breakpoint($LG) {
+        float: left;
+        width: percentage($i / $columns);
+      }
+    }
+  }
+}
+@include col-x-list;
